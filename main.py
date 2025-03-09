@@ -1,7 +1,7 @@
 from ultralytics import YOLO
 import cv2
 
-model = YOLO("runs/train_e_waste_fixed11/weights/best.pt")
+model = YOLO("train_e_waste_fixed11/weights/best.pt")
 
 cap = cv2.VideoCapture(1)
 
