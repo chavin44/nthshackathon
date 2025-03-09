@@ -1,10 +1,7 @@
 from ultralytics import YOLO
 import torch
-gpu_name = torch.cuda.get_device_name(0)
-print(f"GPU at cuda:0: {gpu_name}")
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
-print(f"Using device: {device}")
 
 model = YOLO("yolov8n.pt")
 
